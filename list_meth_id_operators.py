@@ -3,10 +3,11 @@
 submitted = ["Alice", "Bob", "Charlie", "David"]
 attended = ["Charlie", "Eve", "Alice", "Frank"]
 
-combine_list = submitted + attended
-
-item_count = combine_list.count("Alice")
-print(item_count)
+for students in submitted:
+    if students in attended:
+        print('You attended class and submitted your assignment', students)
+    else:
+        print('You submitted your assignment', students)
 
 # Task 2: Check if the two lists are identical in terms of their content, regardless of order.
 
